@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Agenda REST - Página de Cadastro</title>
+        <script>
+            function msg() {
+                alert("Entrada cadastrada");
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Preencha os campos com as informações adequadas:</h1>
+        <form action="http://localhost:8080/AgendaREST/resources/agenda" method="post">
+            Nome: <input type="text" name="nome"/><br/>
+            Sobrenome: <input type="text" name="sobrenome"/><br/>
+            e-mail: <input type="text" name="mail"/><br/>
+            WhatsApp: <input type="text" name="zap"/><br/>
+            <input type="submit" value="Salvar" onclick="msg()"/>
+        </form>
+        <p><a href="http://localhost:8080/ClienteAgenda/cadastra.html">Cadastra novo</a></p>
+        <p><a href="http://localhost:8080/ClienteAgenda">Página inicial</a></p>
+    </body>
+</html>
